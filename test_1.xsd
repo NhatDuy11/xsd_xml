@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Define namespace for the schema -->
+    <xs:element name="row">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Thay thế kiểu dữ liệu -->
+                <xs:element name="c1" type="xs:int" />
+                <xs:element name="c2" type="xs:int" />
+                <xs:element name="c3" type="xs:string" />
+                <xs:element name="c5" type="xs:string" />
+                <xs:element name="c6" type="xs:string" />
+                <xs:element name="c7" type="xs:string" />
+                <xs:element name="c8" type="xs:string" />
+                <xs:element name="c9" type="xs:unsignedShort" />
+                <xs:element name="c11" type="xs:unsignedShort" />
+                <xs:element name="c76" type="xs:string" />
+                <xs:element name="c78" type="xs:unsignedInt" />
+                <xs:element name="c85" type="xs:unsignedShort" />
+                <xs:element name="c93" type="xs:string" />
+                <xs:element name="c94" type="xs:unsignedShort" />
+                <xs:element name="c95" type="xs:string" />
+                <xs:element name="c96" type="xs:unsignedShort" />
+                <xs:element name="c99" type="xs:string" />
+                <xs:element name="c108" type="xs:string" />
+                <xs:element name="c214" type="xs:unsignedShort" />
+                <xs:element maxOccurs="unbounded" name="c215">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="m" type="xs:unsignedShort" use="optional" />
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="c216" type="xs:unsignedInt" />
+                <xs:element name="c217" type="xs:string" />
+                <xs:element name="c218" type="xs:string" />
+                <xs:element name="c219" type="xs:unsignedShort" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
